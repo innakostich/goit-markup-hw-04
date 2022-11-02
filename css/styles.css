@@ -152,12 +152,27 @@ body{
     align-items: center;
   }
 /*hero*/
+ .overlay {
+
+  outline: 2px solid tomato;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4)),
+  url(../images/header.img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ }
 .hero{
     background-color: var(--secondary-background-color);
     text-align: center;
     padding-bottom: 200px;
     padding-top: 200px;
+    
 }
+
 
 .hero-title {
     color: var(--contacts-text-color);
@@ -218,11 +233,20 @@ body{
     line-height: calc(24/14);
     
 }
- .credo-item:not(:last-child) {
+ .list-item:not(:last-child) {
     margin-right: 30px;
   }
- .credo-item{
+ .list-item{
   min-width: 270px;
+ }
+ .list-item ::before{
+  content:"";
+  display: block;
+  height: 120px;
+  outline: solid 2px tomato;
+  background-image: url(../images/antenna\ 1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
  }
   
 /*Work Section*/
@@ -271,7 +295,7 @@ body{
     margin-right: 30px;
   }
 .team-card{
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     border: none;
   
