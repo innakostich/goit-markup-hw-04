@@ -428,10 +428,7 @@ padding-bottom: 30px;
 }
 
 /*Footer Contacts*/
-.footer-flex-container {
-  display: flex;
-  align-items: baseline;
-}
+
 .footer-flex-element:not(:last-child) {
   margin-right: 94px;
 }
@@ -485,6 +482,9 @@ margin-bottom: 0;
   align-items: baseline;
   justify-content: space-between;
  
+}
+.footer-flex:not(:last-child) {
+  margin-right: 94px;
 }
 .footer-offer {
  
